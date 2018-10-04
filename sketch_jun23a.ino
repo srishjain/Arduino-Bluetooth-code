@@ -25,8 +25,8 @@ void loop()
     Serial.print(data);        //Print Value inside data in Serial monitor
     Serial.print("\n");        //New line 
    if(data == '1')            //Checks whether value of data is equal to 1 
-      forward();  //If value is 1 then LED turns ON
-   else if(data == '2')       //Checks whether value of data is equal to 0
+      forward();  //If value is 1 move forward
+   else if(data == '2')       //Checks whether value of data is equal to 2
       backward();
    else if (data=='3')
       left();
@@ -34,7 +34,7 @@ void loop()
       right();
    else if(data=='5')
      stop1();
-      //If value is 0 then LED turns OFF
+      
   }                            
  
 }
